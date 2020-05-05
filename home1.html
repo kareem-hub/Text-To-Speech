@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script defer src="home.js"></script>
+    <style>
+
+body{
+    background-color: black;
+    color: yellow;
+}
+#text{
+    width: 250px;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+}
+.buttons{
+display: inline-block;
+margin-top: 15px;
+}
+button{
+    border: black;
+    background: yellow;
+    height: 21px;
+}
+#speed{
+    background: black;
+    color: yellow;
+}
+p{
+    display: block;
+    margin-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <center><p><strong>Text To Speech</strong></p>
+    <textarea id="text" placeholder="Enter Text Here"></textarea>
+    <br>
+    <div class="buttons">
+   <b> <label for="speed">Speed</label></b>
+    <input type="number" id="speed"  value="1" >
+    <button id="playbutton" onclick="playText();"><b>Play</b></button>
+    <button id="pausebutton"><b>Pause</b></button>
+    <button id="stopbutton"><b>Stop</b></button></center></div>
+</body>
+</html>
